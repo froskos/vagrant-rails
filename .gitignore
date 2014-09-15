@@ -1,0 +1,3 @@
+#Ignore every project folder inside the vagrand folder. This repo only manages the Vagrantfile and the env directory, used for provisioning
+/*/
+!/env/
