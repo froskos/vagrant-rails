@@ -6,13 +6,15 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "hashicorp/precise64"
+  config.vm.box = "vagrant-rails"
+  config.vm.box_url = "" #TODO: A dropbox private URL link to be shared
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 3000, host: 3003
 
-  config.vm.provision "shell", path: "env/bootstrap/list.sh"
+  # Provision temporarily disabled, as box has been packaged
+  # config.vm.provision "shell", path: "env/bootstrap/list.sh"
 
 end
