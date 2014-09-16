@@ -8,7 +8,7 @@ echo ""
 
 #Set path to scripts installing each package
 BUILD_PATH="/vagrant/env/build"
-#vaVAGRANT_HOME_PATH="/home/vagrant"
+VAGRANT_HOME_PATH="/home/vagrant"
 
 #Call the scripts that install the required packages
 
